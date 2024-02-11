@@ -1,7 +1,11 @@
 import type { Preview } from "@storybook/react";
+import "../src/app/globals.css";
 
 const preview: Preview = {
   parameters: {
+    nextjs: {
+      appDirectory: true,
+    },
     actions: { argTypesRegex: "^on[A-Z].*" },
     controls: {
       matchers: {
