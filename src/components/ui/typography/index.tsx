@@ -22,9 +22,9 @@ const typographyVariants = cva("", {
       "9xl": "text-9xl",
     },
     color: {
-      default: "text-gray-400",
-      subtle: "text-gray-700",
-      muted: "text-slate-400",
+      default: "text-gray-700",
+      subtle: "text-gray-400",
+      muted: "text-slate-300",
       error: "text-red-500",
     },
     weight: {
