@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Quicksand } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 
-const quicksand = Quicksand({
+const quicksand = Montserrat({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-quicksand",

@@ -1,12 +1,8 @@
+import { INavigationItem } from "@/types/site";
 import { Typography } from "@ui/typography";
 import Link from "next/link";
 
-interface Props {
-  label: string;
-  url: string;
-}
-
-export const HeaderNavItem = ({ label, url }: Props) => {
+export const NavigationItem = ({ label, url }: INavigationItem) => {
   return (
     <div className="px-4 py-2">
       <Link href={url}>
