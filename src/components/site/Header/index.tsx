@@ -1,8 +1,8 @@
 import { Button } from "@ui/button";
-import { Typography } from "../ui/typography";
+import { Typography } from "@ui/typography";
 import { Navigation } from "./Navigation";
 
-const Header = () => {
+const HeaderComponent = () => {
   return (
     <header className="flex justify-between items-center px-8 py-8">
       <Typography variant="3xl" weight="extrabold">
@@ -18,4 +18,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderComponent;

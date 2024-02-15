@@ -5,8 +5,8 @@ import { NavigationItem } from "./NavigationItem";
 export const Navigation = () => {
   return (
     <div className="header-action flex gap-x-2">
-      {SITE_NAVIGATION.map((item: INavigationItem) => (
-        <NavigationItem {...item} />
+      {SITE_NAVIGATION.map((item: INavigationItem, index: number) => (
+        <NavigationItem key={index} {...item} />
       ))}
     </div>
   );
