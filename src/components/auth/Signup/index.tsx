@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -11,10 +13,12 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Typography } from "@/components/ui/typography";
 import { FcGoogle } from "react-icons/fc";
+import { useRouter } from "next/navigation";
 
 type Props = {};
 
 const SignupComponent: React.FC<Props> = (props: Props) => {
+  const router = useRouter();
   return (
     <Card className="w-[420px] px-4 pb-4 shadow-xl">
       <CardHeader>
@@ -43,7 +47,9 @@ const SignupComponent: React.FC<Props> = (props: Props) => {
 
           <div className="flex flex-row justify-center items-center">
             <Typography>Already have an account?</Typography>
-            <Button variant="link">Signin</Button>
+            <Button variant="link" onClick={() => router.push("/auth/login")}>
+              Signin
+            </Button>
           </div>
         </div>
       </CardContent>
