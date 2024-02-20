@@ -1,4 +1,4 @@
-import { SITE_NAVIGATION } from "@/config/site-config";
+import { SITE_NAVIGATION } from "@/config/site-navigation.config";
 import { INavigationItem } from "@/types/site";
 import { NavigationItem } from "./NavigationItem";
 
